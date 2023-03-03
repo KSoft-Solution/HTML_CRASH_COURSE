@@ -1,0 +1,94 @@
+{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "E-Commerce",
+    "description": "\nChimichangApp API helps you do awesome stuff. 🚀\n\n## Items\n\nYou can **read items**.\n\n## Users\n\nYou will be able to:\n\n* **Create users** (_not implemented_).\n* **Read users** (_not implemented_).\n",
+    "contact": {
+      "name": "Ashok Sahu",
+      "url": "https://ashok-sahu.netlify.app/",
+      "email": "kanhasahu955902@gmail.com"
+    },
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
+    },
+    "version": "2.0"
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Getdata",
+        "operationId": "getData__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": { "application/json": { "schema": {} } }
+          }
+        }
+      }
+    },
+    "/products/": {
+      "get": {
+        "tags": ["Product"],
+        "summary": "Getallproducts",
+        "operationId": "getAllProducts_products__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": { "application/json": { "schema": {} } }
+          }
+        }
+      }
+    },
+    "/products/product": {
+      "get": {
+        "tags": ["Product"],
+        "summary": "Getsingleproduct",
+        "operationId": "getSingleProduct_products_product_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": { "application/json": { "schema": {} } }
+          }
+        }
+      }
+    },
+    "/users/": {
+      "get": {
+        "tags": ["Users"],
+        "summary": "Getallusers",
+        "operationId": "getAllUsers_users__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": { "application/json": { "schema": {} } }
+          }
+        }
+      }
+    },
+    "/users/me": {
+      "get": {
+        "tags": ["Users"],
+        "summary": "Getsingleuser",
+        "operationId": "getSingleUser_users_me_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": { "application/json": { "schema": {} } }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    { "name": "Users", "description": "this is the user api requests.." },
+    {
+      "name": "Product",
+      "description": "this is the product api requests..",
+      "externalDocs": {
+        "description": "Items external docs",
+        "url": "https://fastapi.tiangolo.com/"
+      }
+    }
+  ]
+}
