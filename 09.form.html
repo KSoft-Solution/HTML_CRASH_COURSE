@@ -4,7 +4,67 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Tilt+Prism&display=swap" rel="stylesheet">
+        <title>Form</title>
   </head>
-  <body></body>
+  <body>
+    <style>
+      *{
+        font-family: 'Oswald', sans-serif;
+      }
+    </style>
+    <form method="get" action="">
+      <label for="username">username</label>
+      <input type="text" name="" id="" required/> <br />
+      <label for="phonenumber">phonenumber</label>
+      <input type="number" name="" id="" /> <br />
+      <label for="password">password</label>
+      <input type="password" /> <br />
+      <label for="isMarried">is married</label>
+      <input type="checkbox" name="" id="" value="true" title="true" /><br />
+      <input type="checkbox" name="" id="" value="false" />
+      <label for="radio">radio</label>
+      <input type="radio" name="" id="" /><br />
+      <label for="">select</label>
+      <select name="" id="">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select><br />
+      <label for="">file</label>
+      <input type="file" accept="*" name="" id="" /><br />
+      <label for="">textarea</label>
+      <textarea name="" id="" cols="30" rows="10"></textarea><br />
+      <fieldset>
+        <legend>Name</legend>
+        <label>Firstname: <input type="text" name="firstname" /></label>
+        <label>Lastname: <input type="text" name="lastname" /></label>
+      </fieldset><br />
+      <label for="">color picker</label>
+      <input type="color" name="" id=""><br />
+      <label for="">email</label>
+      <input type="email" name="" id="" required><br />
+      <label for="">range</label>
+      <input type="range" name="" id=""><br>
+      <label for="">time</label>
+      <input type="time" name="" id=""><br>
+      <label for="">date</label>
+      <input type="date" name="" id=""><br>
+      <label for="">date time</label>
+      <input type="datetime" name="" id=""><br>
+      <label for="">month</label>
+      <input type="month" name="" id=""><br>
+      <label for="">week</label>
+      <input type="week" name="" id=""><br>
+      <label for="">search</label>
+      <input type="search" name="" id=""><br>
+      <label for="">telephone</label>
+      <input type="tel" name="" id=""><br>
+
+
+      <input type="submit" name="" id="">
+      <input type="reset" name="" id="">
+    </form>
+  </body>
 </html>
